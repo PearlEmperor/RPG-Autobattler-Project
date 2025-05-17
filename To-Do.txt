@@ -1,0 +1,145 @@
+fighting loop
+    new tiers based on player level
+    auto scrolling
+    30 waves for main tier system
+        1 elite on 5's (+1 each time), boss on 10's
+    blitzing
+    fury for using skills
+
+    different dungeons for gems, equipment blueprints/materials
+
+    using extra heroes when blitzing multiplies output, higher rarity hero = higher multiplier
+
+itemization
+    each item with implicit modifier(s)
+        item slots:
+            weapon
+                attack, item % attack, % pierce (negates a % of defense)
+                absorb fury from target(s) on hit
+            helmet
+                hp, item % hp, % healing (incoming and outgoing, includes leech)
+                absorb hp on hit
+            body
+                physical defense, item % physical defense, % physical defense aura for party
+                respawn with 35% health, higher percent with better gear
+            leggings
+                magical defense, item % magical defense, % magical defense aura for party
+                lower attackers defense when hit
+            gloves
+                hit, critical chance, item % critical chance
+                gain fury on hit
+            boots
+                agility, item % agility, lower skill cooldown
+                chance to counterattack
+            belt
+                % phys defense personal buff, % agility personal buff, extra starting fury
+            rings
+                % hp personal buff, % attack personal buff, fury gain per round
+            amulet
+                % mag defense personal buff, endurance (incoming critical damage reduction), dodge (avoid being hit)
+    loa enhancement
+        gold? additional material?
+    loa gem socketing
+    loa base crafting
+            blueprints
+            specified material for each tier (listed lower down)
+            number of mats needed = required level +10
+    poe/epoch - use runes for special modifiers
+    2 different items at penultimate, use both in paragon
+
+classes
+    mage
+        healer
+        aoe attacker
+    hunter
+        high single target, 2x1 aoe
+    warrior
+        high defense, 1x3 aoe
+        swords
+
+6 party members, 3x3
+    link/assisted/partner skills?
+    tavern for recruiting, similar to loa, but maybe another source for hero souls
+        no hero crests, but lock access somehow
+
+max level 100
+inherit systems for new gear/heroes
+
+totem aura(s)?
+    loa angels halo, no skills
+    similar upgrade method, dungeon for materials, craft basic tier
+    5 totems
+        3 row specific
+        2 full party (10% less effect for each totem you have?)
+        start with none, add 1 full party, add 2nd, then add row specifics 1 at a time
+        every 20 levels?
+
+Leather - boars - forest
+Chitin - scorpions? - desert
+Iron - iron ore, take over goblin forge, introduce metal refining - mountains
+Bronze - tin/copper ore - cave
+Steel - iron ore/coal - quarry?
+Orichalcum - canyon
+Mithril - snowy mountains
+Dragon Scale - castle captured by dragon
+Voraxum/Stellarum - abyss ruins/lost observatory
+Astratine - meteor field?
+
+item tiers
+    common - grey
+        training - starting gear
+        Leather 1-10
+    uncommon - green
+        Chitin 11-20
+    rare - blue
+        Iron 21-30
+    epic - purple
+        Bronze 31-40
+    legendary - orange - +1 stat, 2 total
+        Steel 41-50
+    mythic - red - +1 trigger effect, 1 total
+        Orichalcum 51-60
+    transcendent - light blue - +1 stat, 3 total
+        Mithril 61-70
+    penultimate - gold
+        Dragon Scale 71-80
+        Voraxum/Stellarum (equal stats (different secondary/tertiary?), but can be farmed at the same time) 81-90
+    paragon - white
+        Astratine (requires Voraxum and Stellarum gear for each slot) 91-100
+
+skill stones for unlocking new skills
+    each character has default skills
+        can only replace with skills relevant to their class
+            mages get mage skills, etc
+    small trees for augmenting skills
+        each character has own tree for each skill
+        skill stones used to unlock/upgrade nodes on tree once skill is unlocked
+    excess skill stones can be converted to blanks then to other skills, or sold for gold
+        need to convert at least 1 skill stone to a blank to be able to make them from blanks
+
+
+
+
+tentative order
+    fighting loop
+--        basic attack
+        current wave top left of screen
+    main menu
+        way to start fighting
+        button to go back to menu
+        auto retry - lock behind level/progression?
+    character management
+        character screen
+        inventory
+        equipment
+    party system
+    hero recruitment
+    multiple dungeons
+        expand gameState
+        dungeon/enemy rewards
+    leveling system
+        global level, all heroes have the same level
+    create variance in enemy stats when going to begin balancing
+
+
+    figure out a name
