@@ -36,7 +36,7 @@ window.addEventListener('load', function() {
 
             //Sets initial GameState
             this.gameStates = [new GameState.SpawningWave(this), new GameState.Battling(this), new GameState.MainMenu(this)];
-            this.currentGameState = this.gameStates[2];
+            this.currentGameState = this.gameStates[0];
             this.currentGameState.enter();
         }
 
