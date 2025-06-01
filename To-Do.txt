@@ -21,7 +21,7 @@ itemization
                 absorb hp on hit
             body
                 physical defense, item % physical defense, % physical defense aura for party
-                respawn with 35% health, higher percent with better gear
+                respawn once with 35% health, higher percent with better gear
             leggings
                 magical defense, item % magical defense, % magical defense aura for party
                 lower attackers defense when hit
@@ -33,13 +33,16 @@ itemization
                 chance to counterattack
             belt
                 % phys defense personal buff, % agility personal buff, extra starting fury
-            rings
+            ring
                 % hp personal buff, % attack personal buff, fury gain per round
             amulet
                 % mag defense personal buff, endurance (incoming critical damage reduction), dodge (avoid being hit)
     loa enhancement
         gold? additional material?
     loa gem socketing
+        chest mimic hunt minigame
+            not like idle slayer, give signs of chest being mimic
+            time limit
     loa base crafting
             blueprints
             specified material for each tier (listed lower down)
@@ -50,32 +53,51 @@ itemization
 classes
     mage
         healer
-        aoe attacker
+        large aoe
     hunter
-        high single target, 2x1 aoe
+        high single target, 2x1 aoe, 3x1 if boss row
     warrior
         high defense, 1x3 aoe
         swords
+    some red heroes will be hybrids for extra flavor
+        slightly lower stats, but more versatile
 
-6 party members, 3x3
+6 party members
+    3 max of 1 class, 2 max of second
+        would force at least 1 of each class in party
+        would help against mage spam
     link/assisted/partner skills?
-    tavern for recruiting, similar to loa, but maybe another source for hero souls
-        no hero crests, but lock access somehow
+    tavern for recruiting, similar to loa
+        can fire unwanted cause why not
+            would need to push equipped gear into inventory, would not refund upgrade resources used on hero
+        contract scraps
+            devise minigame to aquire
+                memory game?
+            different tiers according to hero rarity
+            can upgrade rarity
+            turn in extras for other resources
+            always able to get every hero once unlocked
+                no missables
 
 max level 100
 inherit systems for new gear/heroes
 
-totem aura(s)?
-    loa angels halo, no skills
-    similar upgrade method, dungeon for materials, craft basic tier
-    5 totems
-        3 row specific
-        2 full party (10% less effect for each totem you have?)
-        start with none, add 1 full party, add 2nd, then add row specifics 1 at a time
-        every 20 levels?
+totem aura
+    poe idols?
+        different sized totems
+        can rotate
+            button on icon
+            icon is square, change to proper format once started dragging
+        start with 3x3 grid, 1x2 totems
+        up to 7x7 grid, 2x3 totems
+        row/column specific modifiers
+        loa equip refine to change/upgrade modifiers
+    loa angels halo
+    boss rush for materials, craft ('carving') basic tier
+    level 50?
 
 Leather - boars - forest
-Chitin - scorpions? - desert
+Chitin - scorpions/beetles - desert
 Iron - iron ore, take over goblin forge, introduce metal refining - mountains
 Bronze - tin/copper ore - cave
 Steel - iron ore/coal - quarry?
@@ -87,7 +109,6 @@ Astratine - meteor field?
 
 item tiers
     common - grey
-        training - starting gear
         Leather 1-10
     uncommon - green
         Chitin 11-20
@@ -101,13 +122,16 @@ item tiers
         Orichalcum 51-60
     transcendent - light blue - +1 stat, 3 total
         Mithril 61-70
+        +1 rune facet slot
     penultimate - gold
         Dragon Scale 71-80
         Voraxum/Stellarum (equal stats (different secondary/tertiary?), but can be farmed at the same time) 81-90
+        +1 rune facet slot
     paragon - white
         Astratine (requires Voraxum and Stellarum gear for each slot) 91-100
+        +1 rune facet slot
 
-skill stones for unlocking new skills
+skill stones for unlocking new skills ------ this will be implemented late, use basic skills until framework is ready
     each character has default skills
         can only replace with skills relevant to their class
             mages get mage skills, etc
@@ -115,7 +139,183 @@ skill stones for unlocking new skills
         each character has own tree for each skill
         skill stones used to unlock/upgrade nodes on tree once skill is unlocked
     excess skill stones can be converted to blanks then to other skills, or sold for gold
-        need to convert at least 1 skill stone to a blank to be able to make them from blanks
+        need to convert at least 1 skill stone to a blank to be able to make that skill from blanks?
+        alternatively, just lock behind levels
+
+keys from normal areas, use to access special dungeons with increased rewards?
+
+character screen
+    hero select
+        remove top half of border, only keep bottom section?
+    search bar?
+
+challenges?
+    improve reward gains from dungeons
+    things like clear in x time, kill x monsters/clear x waves in one endless run, do x damage/healing in one turn/to one target, take 0 damage for x waves in endless
+
+settings menu
+    make when starting audio
+    include confirmation dialogue options
+    reset game
+        set the framework for this when making save/load
+
+redeemable 1 hour double exp token? on first login every day
+    deleted if not used before midnight
+    starts after level x?
+        might make starting a new character feel too fast if available right away
+    alternatively
+        high exp dungeon with dangerous enemies? and no other rewards
+
+hidden clickables in dungeons
+    would give small rewards like extra damage or gold found
+    rewards could be zone specific, find each zone's set of clickables
+        create special conditions for specific ones to spawn
+            1 hero, fully upgraded gear of at least same tier
+    menu to track which ones have been found and what is left to find
+        dont tell requirements or rewards, just show that they exist
+
+boss rush mechanic
+
+gold/exp drops from all base dungeons
+boss layout
+    m  m  m
+       B
+    m  m  m
+
+Forest
+    enemies
+        goblins
+            warrior
+            archer
+            boss
+        boars
+        wolves
+    drops
+        beast hide
+            turn into leather?
+Desert
+    enemies
+        scorpions
+            poisons
+        beetles
+            shields
+        worms - boss
+            acid spit
+            dive
+    drops
+        chitin
+            icon shows different red and blue pieces
+Mountains
+    unlock forge at same time
+    enemies
+        hobgoblins
+            warrior
+            archer
+            shaman (mage/healer)
+            vulture rider
+                archer
+                boss
+        vultures
+            large aoe
+    drops
+        iron ore
+Cave
+    enemies
+        spider
+            slows
+        rats
+            poisons
+        bats
+            stun
+        boss wave has 2 elites of each instead of a boss
+    drops
+        tin ore
+        copper ore
+Quarry
+    enemies
+        undead
+            warrior
+                pickaxe - sweep
+                hammer - large hit
+        bandits
+            warrior
+            archer
+            boss
+        necromancer
+            boss
+            mage
+            summons new undead every x turns
+    drops
+        iron ore
+        coal
+Canyon
+    enemies
+        giants
+            big hammer
+            boss
+        golems
+            rock throw
+        cyclops
+            big hammer
+    drops
+        orichalcum ore
+Snowy Mountains
+    enemies
+        bears
+        griffins
+            aerial strike
+        roc birds
+            boss
+            large aoe
+            aerial strike
+    drops
+        mithril ore
+Castle
+    enemies
+        dragon
+            boss
+            fire breath line aoe
+        gargoyles
+        ghouls
+    drops
+        dragon scales
+Abyss Ruins
+    enemies
+        demons
+        ghost horsemen
+            warrior
+            archer
+        fire elementals
+            boss
+            fireballs
+            thorns when melee hit
+            fire res
+    drops
+        voraxum dust
+Star Tower
+    enemies
+        animated armor
+            melee
+        mages
+            celestial?
+        angels
+            mage
+            archer
+            boss with sword
+        large sabertooth like beasts
+    drops
+        stellarum dust
+Meteor Field
+    enemies
+        phoenixes
+        wyverns
+        basilisks
+        need big boss for final
+    drops
+        astratine dust
+            'binding agent'
+
+
 
 
 
@@ -123,23 +323,101 @@ skill stones for unlocking new skills
 tentative order
     fighting loop
 --        basic attack
-        current wave top left of screen
+        current wave on screen
     main menu
-        way to start fighting
-        button to go back to menu
+--        way to start fighting
+--        button to go back to menu
         auto retry - lock behind level/progression?
+            put inside dungeon selection menu
+--        auto center bottom edge buttons, use later for event/mechanic buttons on left
     character management
         character screen
-        inventory
-        equipment
+            inventory
+            equipment
+    initial character selection gameState
+        will ship in this gameState
+        choose initial hero (warrior, archer, mage)
     party system
     hero recruitment
     multiple dungeons
+        main menu dungeon selector pedestal
         expand gameState
         dungeon/enemy rewards
-    leveling system
-        global level, all heroes have the same level
+            leveling system
+                global level, all heroes have the same level
     create variance in enemy stats when going to begin balancing
+        make some levels require multiple aoe users, and others require high single target
+            this will be a pain to get right
 
 
     figure out a name
+
+
+unlock levels by mechanic
+    crafting
+        5?      refine (loa enhance)
+        11      forge
+        25      rune socketing (loa gems)
+        40      augment (loa refine)
+        65      merged rune socketing
+                    mithril+
+                    add dedicated slot(s) using 'rune facet', not upgraded slot like loa
+                    2 stats only, not 3
+                rune merging in forge
+    totems
+        50      main totem, no grid
+                carving
+        60      3x3 grid, 1x2 support totems
+        70      5x5 grid, 1x3 support totems
+        90      7x7 grid, 2x3 support totems
+    tavern      use gold + contract scraps
+        1       green, base recruiting, first 3 heroes
+        20      blue, 8
+        40      purple, 12
+        60      orange, 16
+        90      red, 24
+    party
+        1       3 slots
+        20      4
+        45      5
+        65      6
+    heroes
+        30      enchant (loa train, but target specific stats instead of a general increase)
+        45      skill trees
+        80      swap skills
+
+unlock levels by level
+    1       green tavern
+            3 party slots
+    5       refine
+    11      forge
+    20      blue tavern
+            4 slots
+    25      runes
+    30      enchant
+    40      augment
+            purple tavern
+    45      5 slots
+            skill trees
+    50      totems
+            totem carving
+    60      3x3 support totem grid, 1x2
+            orange tavern
+    65      merged runes
+            6 slots
+    70      5x5 totem, 1x3
+    80      swap skills
+    90      7x7 totem, 2x3
+            red tavern
+
+
+info overlay
+    item image
+    item name
+    required level (1 if none)
+    stats (if equipment)
+    source
+    description
+
+
+game.displayedItems = game.inventory.slice(startIndex, startIndex + slots + 1)
