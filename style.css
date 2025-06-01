@@ -5,7 +5,7 @@
 }
 
 #canvas1 {
-    border: 5px solid black;
+    border: none;
     position: absolute;
     background: gray;
     top: 50%;
@@ -15,6 +15,6 @@
     max-height: 100%;
 }
 
-#warrior1, #enemySprites1, #forestLayer1, #forestLayer2, #forestLayer3, #forestLayer4, #forestLayer5, #mainMenu, #dungeonPortal {
+img {
     display: none;
 }
