@@ -1,10 +1,7 @@
 class StaticBackground {
     constructor() {
-        
-    }
-
-    draw(context) {
-        context.drawImage(this.image, this.x, this.y, this.width, this.height);
+        this.type = 'static';
+        this.movingDone = false;
     }
 }
 
@@ -12,11 +9,25 @@ export class MainMenu extends StaticBackground {
     constructor(game) {
         super();
         this.game = game;
+        this.isSprite = false;
         this.width = this.game.width;
         this.height = this.game.height;
-        this.image = document.getElementById('mainMenu');
         this.x = 0;
         this.y = 0;
+        this.image = document.getElementById('mainMenu');
+    }
+}
+
+export class CharacterMenu extends StaticBackground {
+    constructor(game) {
+        super();
+        this.game = game;
+        this.isSprite = false;
+        this.width = 1440;
+        this.height = 800;
+        this.x = (this.game.width - this.width) / 2;
+        this.y = (this.game.height - this.height) / 2;
+        this.image = document.getElementById('characterMenu');
     }
 }
 
@@ -25,18 +36,17 @@ class Layer {
         this.game = game;
         this.width = width;
         this.height = height;
-        this.speedModifier = speedModifier;
-        this.image = image;
         this.x = 0;
         this.y = this.game.height - this.height;
-        this.speed = 1;
+        this.speedModifier = speedModifier;
+        this.image = image;
     }
 
     update() {
         if (this.x < -this.width) {
             this.x = 0;
         }
-        else this.x -= this.speed * this.speedModifier;
+        else this.x -= this.game.spawnSpeed * this.speedModifier;
     }
 
     draw(context) {
@@ -47,19 +57,20 @@ class Layer {
 
 class ScrollingBackground {
     constructor() {
-        
+        this.type = 'scrolling';
+        this.movingDone = false;
     }
     
     update() {
         this.backgroundLayers.forEach(layer => {
             layer.update();
-        })
+        });
     }
 
     draw(context) {
         this.backgroundLayers.forEach(layer => {
             layer.draw(context);
-        })
+        });
     }
 }
 
